@@ -261,6 +261,10 @@ view: deal__c {
     type: number
     sql: ${TABLE}.price__c ;;
   }
+  dimension: y_value__c {
+    type: number
+    sql: ${TABLE}.y_value__c ;;
+  }
 
   dimension: price_nz__c {
     type: number

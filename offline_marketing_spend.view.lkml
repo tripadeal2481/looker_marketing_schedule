@@ -39,6 +39,10 @@ view: offline_marketing_spend {
     type: string
     sql: ${TABLE}.deal_id__c ;;
   }
+  dimension: x_value__c {
+    type: number
+    sql: ${TABLE}.x_value__c ;;
+  }
   dimension:  Deal_ID_Title {
     type: string
     sql: ${TABLE}.Deal_ID_Title__c ;;
@@ -58,7 +62,7 @@ view: offline_marketing_spend {
     sql: ${TABLE}.marketing_source__c ;;
     link: {
       label: "Marketing Source Dashboard"
-      url: "https://tripadeal.au.looker.com/dashboards/18?Marketing%20Source={{value | url_encode}}"
+      url: "https://tripadeal.au.looker.com/dashboards/30?Y%20Value={{ _filters['offline_marketing_spend.x_value__c'] | url_encode }}"
       icon_url: "http://looker.com/favicon.ico"
     }
   }

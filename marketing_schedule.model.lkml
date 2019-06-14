@@ -58,12 +58,12 @@ explore: online_marketing {
   }
 }
 #ab edit
-#explore: deal__c {
-# view_name: deal__c
+explore: deal__c {
+ view_name: deal__c
 #join: offline_marketing_spend {
 #    type: inner
 #    sql_on: ${deal__c.name} = ${offline_marketing_spend.deal_id};;
-#  }
+ }
 #
 #}
 #abedit
