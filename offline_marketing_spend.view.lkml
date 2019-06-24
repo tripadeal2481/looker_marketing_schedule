@@ -63,7 +63,7 @@ view: offline_marketing_spend {
     link: {
       label: "Marketing Source Dashboard"
 #       url: "https://tripadeal.au.looker.com/dashboards/30?X%20Value={{ _filters['offline_marketing_spend.x_value__c'] | url_encode }}"
-      url: "https://tripadeal.au.looker.com/dashboards/30?Y%20Value={{ _filters['offline_marketing_spend.x_value__c'] | url_encode }}"
+      url: "https://tripadeal.au.looker.com/dashboards/30?Y%20Value=>%3D{{ x_value__c._value }}"
       icon_url: "http://looker.com/favicon.ico"
     }
   }
