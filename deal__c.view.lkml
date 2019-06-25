@@ -424,6 +424,14 @@ view: deal__c {
     type: number
     sql: ${TABLE}.total_radio_spend__c ;;
   }
+  dimension: Days_until_exhausted__c {
+    type: number
+    sql: ${TABLE}.Days_until_exhausted__c ;;
+  }
+  dimension: Rate_of_Sale__c {
+    type: number
+    sql: ${TABLE}.Rate_of_Sale__c ;;
+  }
 
   dimension: total_remaining_allocations__c {
     type: number
