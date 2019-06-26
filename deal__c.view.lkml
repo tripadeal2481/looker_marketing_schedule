@@ -101,6 +101,11 @@ view: deal__c {
     sql: ${TABLE}.deal_estimated_margin__c ;;
   }
 
+  dimension: CurrentGmaac__c {
+    type: number
+    sql: ${TABLE}.CurrentGmaac__c ;;
+  }
+
   dimension: deal_estimated_profit__c {
     type: number
     sql: ${TABLE}.deal_estimated_profit__c ;;
