@@ -56,6 +56,34 @@ view: deal__c {
     datatype: date
     sql: ${TABLE}.book_by_nz__c ;;
   }
+  dimension_group: LatestMarketing_NonRevShare{
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.LatestMarketing_NonRevShare__c ;;
+  }
+  dimension_group: LatestMarketing_RevShare{
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.LatestMarketing_RevShare__c ;;
+  }
 
   dimension: category__c {
     type: string
